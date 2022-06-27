@@ -1,0 +1,160 @@
+{
+  "Name": "Property",
+  "Properties": [
+    {
+      "name": "Name",
+      "label": "属性名",
+      "type": "string",
+      "isArray": false,
+      "cmp": {
+        "type": "Input",
+        "config": {}
+      },
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "Label",
+      "label": "属性标签",
+      "type": "string",
+      "isArray": false,
+      "cmp": {
+        "type": "Input",
+        "config": {}
+      },
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "Description",
+      "label": "属性描述",
+      "type": "string",
+      "isArray": false,
+      "cmp": {
+        "type": "Input",
+        "config": {}
+      },
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "IsArray",
+      "label": "属性是否是数组",
+      "type": "boolean",
+      "isArray": false,
+      "cmp": {
+        "type": "Switch",
+        "config": {}
+      },
+      "defaultValue": false,
+      "required": true
+    },
+    {
+      "name": "Type",
+      "label": "属性类型",
+      "type": "string",
+      "isArray": false,
+      "cmp": {
+        "type": "AutoComplete",
+        "config": {
+          "options": [
+            {
+              "label": "object",
+              "value": "object"
+            },
+            {
+              "label": "bool",
+              "value": "bool"
+            },
+            {
+              "label": "boolean",
+              "value": "boolean"
+            },
+            {
+              "label": "double",
+              "value": "double"
+            },
+            {
+              "label": "int",
+              "value": "int"
+            },
+            {
+              "label": "int32",
+              "value": "int32"
+            },
+            {
+              "label": "number",
+              "value": "number"
+            },
+            {
+              "label": "long",
+              "value": "long"
+            },
+            {
+              "label": "guid",
+              "value": "guid"
+            },
+            {
+              "label": "datetime",
+              "value": "datetime"
+            },
+            {
+              "label": "string",
+              "value": "string"
+            }
+          ]
+        }
+      },
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "Version",
+      "label": "属性版本",
+      "type": "string",
+      "isArray": false,
+      "cmp": {
+        "type": "Input",
+        "config": {}
+      },
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "AppId",
+      "label": "应用Id",
+      "type": "number",
+      "isArray": false,
+      "cmp": {
+        "type": "Number",
+        "config": {}
+      },
+      "defaultValue": 0,
+      "required": true
+    },
+    {
+      "name": "IsMetaDataType",
+      "label": "是否是元数据",
+      "type": "boolean",
+      "isArray": false,
+      "cmp": {
+        "type": "Switch",
+        "config": {}
+      },
+      "defaultValue": false,
+      "required": true
+    },
+    {
+      "name": "MetaDataType",
+      "label": "属性元数据类型",
+      "type": "Number",
+      "isArray": false,
+      "cmp": {
+        "type": "Number",
+        "config": {}
+      },
+      "defaultValue": 1,
+      "required": false
+    }
+  ]
+}

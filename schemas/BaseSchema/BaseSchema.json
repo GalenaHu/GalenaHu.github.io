@@ -1,0 +1,45 @@
+{
+  "Name": "BaseSchema",
+  "Properties": [
+    {
+      "name": "SchemaName",
+      "label": "schema名",
+      "type": "string",
+      "cmp": {
+        "type": "Input"
+      },
+      "default": "",
+      "required": true
+    },
+    {
+      "name": "SchemaVersion",
+      "label": "schema版本",
+      "type": "string",
+      "cmp": {
+        "type": "Input"
+      },
+      "default": "",
+      "required": true
+    },
+    {
+      "name": "AppId",
+      "label": "应用Id",
+      "type": "number",
+      "cmp": {
+        "type": "Number"
+      },
+      "default": 0,
+      "required": true
+    },
+    {
+      "name": "MetaDataType",
+      "label": "元数据类型",
+      "type": "number",
+      "cmp": {
+        "type": "Number"
+      },
+      "default": 1,
+      "required": false
+    }
+  ]
+}

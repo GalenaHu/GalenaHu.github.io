@@ -1,0 +1,125 @@
+{
+  "Name": "",
+  "Properties": [
+    {
+      "name": "_Name",
+      "label": "schema名",
+      "type": "string",
+      "cmp": {
+        "type": "Input"
+      },
+      "cmptype": "Input",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "_Title",
+      "label": "schema标题",
+      "type": "string",
+      "cmp": {
+        "type": "Input"
+      },
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "_Version",
+      "label": "schema版本",
+      "type": "string",
+      "cmp": {
+        "type": "Input"
+      },
+      "defaultValue": "1.0.0",
+      "required": true
+    },
+    {
+      "name": "_Description",
+      "label": "schema描述",
+      "type": "string",
+      "cmp": {
+        "type": "Input"
+      },
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "_MetaDataType",
+      "label": "元数据类型",
+      "type": "number",
+      "cmp": {
+        "type": "Number"
+      },
+      "defaultValue": 1,
+      "required": true
+    },
+    {
+      "name": "_AppId",
+      "label": "应用Id",
+      "type": "number",
+      "cmp": {
+        "type": "Number"
+      },
+      "defaultValue": 0,
+      "required": true
+    },
+    {
+      "name": "_TenantId",
+      "label": "租户Id",
+      "type": "number",
+      "cmp": {
+        "type": "Number"
+      },
+      "defaultValue": 0,
+      "required": true
+    },
+    {
+      "name": "IsBaseSchema",
+      "label": "是否是被继承的基础schema",
+      "type": "boolean",
+      "cmp": {
+        "type": "Switch"
+      },
+      "defaultValue": false,
+      "required": false
+    },
+    {
+      "name": "BaseSchemas",
+      "label": "继承schema",
+      "type": "BaseSchema",
+      "isArray": true,
+      "cmp": {
+        "type": "BaseSchema",
+        "config": {}
+      },
+      "defaultValue": null,
+      "required": false
+    },
+    {
+      "name": "_UniqueKeys",
+      "label": "配置规则唯一键",
+      "type": "string",
+      "isArray": true,
+      "cmp": {
+        "type": "Selector",
+        "config": {
+          "isMulti": true,
+          "options": []
+        }
+      },
+      "defaultValue": null,
+      "required": false
+    },
+    {
+      "name": "Properties",
+      "label": "参数",
+      "type": "Property",
+      "isArray": true,
+      "cmp": {
+        "type": "Property",
+        "config": {}
+      },
+      "defaultValue": [],
+      "required": true
+    }
+  ]
+}
